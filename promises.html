@@ -1,0 +1,19 @@
+
+
+<script>
+    // promise is class in js to perform a anchronas operation
+
+    var record = new Promise((res,rej)=>{   
+        console.log(typeof res,typeof rej);
+        res("task is completed");
+        rej("Task is not completed");
+    })  
+    console.log(record);    //then is handler is used to resolver value
+    record.then((value)=>{
+        console.log(value);
+    }).catch(()=>{
+        console.log(error);
+    }).finally(()=>{
+        console.log("Go for next task");
+    })
+</script>

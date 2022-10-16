@@ -1,0 +1,23 @@
+
+
+<script>
+    //single level inheritance porperty (extends)
+    class a {
+        myfunction1() {
+            console.log(" class a");
+        }
+    }
+    class b extends a {  
+        myfunction2() {
+            super. myfunction1(); // for parent class
+            console.log(" class b  myfunction1");
+        }
+
+    }
+    var rec = new b
+    console.log("rec");
+    rec.myfunction1();
+    rec.myfunction2();
+
+
+</script>
